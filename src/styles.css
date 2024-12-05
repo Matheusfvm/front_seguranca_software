@@ -1,0 +1,251 @@
+/* Estilização Global */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #ebe5ec;
+  /* Cor de fundo branco */
+  color: #262931;
+  /* Cor da fonte preta */
+  text-align: center;
+}
+
+h1,
+h2,
+h3 {
+  color: #473a95;
+  /* Azul */
+}
+
+button {
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+/* Botões específicos */
+button.delete {
+  background-color: #c7452c;
+  /* Vermelho */
+  color: #ebe5ec;
+  /* Branco */
+}
+
+button.update {
+  background-color: #80a2bd;
+  /* Azul claro */
+  color: #ebe5ec;
+  /* Branco */
+}
+
+button.details {
+  background-color: #b683b2;
+  /* Roxo */
+  color: #ebe5ec;
+  /* Branco */
+}
+
+/* Links */
+a {
+  text-decoration: none;
+  color: #473a95;
+  /* Azul */
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Formulários */
+form {
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #80a2bd;
+  /* Azul claro */
+  border-radius: 5px;
+  background-color: #ffffff;
+  /* Branco */
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #262931;
+}
+
+input,
+select {
+  max-width: 300px;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #473a95;
+  /* Azul */
+  border-radius: 5px;
+}
+
+input:focus {
+  border-color: #b683b2;
+  /* Roxo */
+  outline: none;
+}
+
+/* Mensagens de erro */
+.error {
+  color: #c7452c;
+  /* Vermelho */
+  font-weight: bold;
+  margin-top: -15px;
+  margin-bottom: 20px;
+}
+
+/* Estilo para o contêiner */
+.delete-container {
+  margin: 20px auto;
+  text-align: left;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  /* Alinha tudo à esquerda */
+  gap: 1px;
+  /* Espaço entre os elementos */
+  align-self: center;
+}
+
+.delete-container label {
+  display: flex;
+  /* Alinha checkbox e texto na mesma linha */
+  align-items: center;
+  gap: 1px;
+  /* Espaçamento mínimo */
+  font-size: 14px;
+  color: #262931;
+  /* Preto */
+  align-self: center;
+}
+
+.delete-container input[type="checkbox"] {
+  margin: 0;
+  /* Remove margens da checkbox */
+  padding: 0;
+  /* Remove preenchimento */
+}
+
+/* Botão vermelho para deleção */
+.delete-button {
+  background-color: #80a2bd;
+  /* Azul claro */
+  color: #ebe5ec;
+  /* Branco */
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  width: auto;
+  /* Garante que o botão não ocupe largura fixa */
+  align-self: center
+}
+
+.delete-button.delete {
+  background-color: #c7452c;
+  /* Vermelho */
+}
+
+.delete-button:hover {
+  background-color: #a53620;
+  /* Vermelho mais escuro */
+}
+
+/* Estilização dos campos de detalhes */
+.user-details {
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #80a2bd; /* Azul claro */
+  border-radius: 5px;
+  background-color: #ffffff; /* Branco */
+  text-align: left;
+}
+
+.detail {
+  margin-bottom: 15px;
+}
+
+input[type="text"], input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #473a95; /* Azul */
+  border-radius: 5px;
+  background-color: #f4f4f4;
+  color: #262931; /* Preto */
+}
+
+input:read-only {
+  background-color: #e9ecef;
+  color: #6c757d;
+}
+
+/* Estilização da seção de detalhes do usuário */
+.user-details-container {
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #80a2bd; /* Azul claro */
+  border-radius: 5px;
+  background-color: #ffffff; /* Branco */
+  text-align: left;
+}
+
+.details-card {
+  display: flex;
+  flex-direction: column;
+}
+
+span {
+  display: block;
+  margin-top: 5px;
+  color: #262931; /* Preto */
+  background-color: #f4f4f4;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #473a95; /* Azul */
+}
+
+p {
+  color: #80a2bd; /* Azul claro */
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logout {
+  background-color:white;
+  color: black;
+  border: 2px solid black;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.logout:hover {
+  background-color: #9e9e9e;
+}
+
+.logout:focus {
+  outline: none;
+}
