@@ -19,8 +19,20 @@ const Register = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+
+    const adjustedDate = new Date(formData.dataNascimento);
+    const utcDate = new Date(
+      adjustedDate.getUTCFullYear(),
+      adjustedDate.getUTCMonth(),
+      adjustedDate.getUTCDate()
+    );
+  
     try {
-      await userService.register(formData);
+      const adjustedFormData = {
+        ...formData,
+        dataNascimento: utcDate,
+      };
+      await userService.register(adjustedFormData);
       alert("Usuário registrado com sucesso!");
       navigate("/login");
     } catch (error) {
